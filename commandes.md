@@ -70,3 +70,15 @@ git push
 Si vous travaillez sur votre ordinateur local et que voulez que vos commits soient visibles aussi sur Github, vous pushez (envoyer) les modifications vers Github avec cette commande.
 
 git pull : Si vous travaillez sur votre ordinateur local, et su vous voulez la version la plus à jour de votre repository pour travailler dessus, vous “pull”ez (tirez) les modifications provenant de Github avec cette commande.
+
+<pre><code>Pour connaître le dépot git actuel :</pre></code>
+git config --get remote.origin.url
+
+<pre><code>Initialiser un projet git depuis un depot existant :</pre></code>
+cd /var/www/MINA/
+ git init
+ git remote add origin git@github.com:jlavinh/MINA.git
+ git pull -u origin master
+
+<pre><code>Changer le dépot git distant :</pre></code>
+git remote set-url origin git@github.com:jlavinh/Mina.git
